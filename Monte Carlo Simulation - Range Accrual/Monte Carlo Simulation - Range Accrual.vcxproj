@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a2710760-5469-46f8-9f7a-e249c4d87782}</ProjectGuid>
-    <RootNamespace>ChooserCrankNicolson</RootNamespace>
+    <ProjectGuid>{8723c59c-ce00-4a0e-b709-0dac0de0105d}</ProjectGuid>
+    <RootNamespace>MonteCarloSimulationRangeAccrual</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,37 +139,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BSEq.cpp" />
-    <ClCompile Include="Call.cpp" />
-    <ClCompile Include="ChooserOption.cpp" />
-    <ClCompile Include="ExplicitMethod.cpp" />
-    <ClCompile Include="FDMethod.cpp" />
-    <ClCompile Include="ImplicitScheme.cpp" />
-    <ClCompile Include="Main24.cpp" />
-    <ClCompile Include="Matrix.cpp" />
-    <ClCompile Include="Put.cpp" />
+    <ClCompile Include="BSModel.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="normalRandomGenerator.cpp" />
+    <ClCompile Include="Option.cpp" />
+    <ClCompile Include="RangeAccrual.cpp" />
+    <ClCompile Include="stats.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AdaptorNs.h" />
-    <ClInclude Include="AdaptorNt.h" />
-    <ClInclude Include="AdaptorTc.h" />
-    <ClInclude Include="BSEq.h" />
-    <ClInclude Include="BSModel01.h" />
-    <ClInclude Include="Call.h" />
-    <ClInclude Include="ChooserOption.h" />
-    <ClInclude Include="CNMethod.h" />
+    <ClInclude Include="BSModel.h" />
+    <ClInclude Include="error.h" />
     <ClInclude Include="ExoticOption.h" />
-    <ClInclude Include="Function.h" />
-    <ClInclude Include="ImplicitScheme.h" />
+    <ClInclude Include="normalRandomGenerator.h" />
     <ClInclude Include="Option.h" />
-    <ClInclude Include="ParabPDE.h" />
-    <ClInclude Include="Put.h" />
-    <ClInclude Include="VanillaOption.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="AnalysisNs.csv" />
-    <None Include="AnalysisNt.csv" />
-    <None Include="AnalysisTc.csv" />
+    <ClInclude Include="RangeAccrual.h" />
+    <ClInclude Include="stats.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
